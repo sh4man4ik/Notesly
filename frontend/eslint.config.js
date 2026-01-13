@@ -16,7 +16,11 @@ export default defineConfig([
 		languageOptions: {
 			parser,
 			ecmaVersion: 'latest',
-			globals: globals.browser,
+			globals: {
+				...globals.browser
+				//...globals.jest
+			},
+
 			parserOptions: {
 				ecmaVersion: 'latest',
 				sourceType: 'module',
@@ -26,13 +30,6 @@ export default defineConfig([
 
 		plugins: {
 			'@typescript-eslint': tsPlugin
-		},
-
-		files: ['**/*.test.{ts,tsx}'],
-		languageOptions: {
-			globals: {
-				...globals.jest
-			}
 		},
 
 		rules: {
