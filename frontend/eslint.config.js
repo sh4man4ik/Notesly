@@ -10,10 +10,9 @@ export default defineConfig([
 	globalIgnores(['dist']),
 
 	{
-		files: ['**/*.{js,jsx,ts,tsx}'],
-
 		extends: [js.configs.recommended, reactHooks.configs.flat.recommended, reactRefresh.configs.vite],
 
+		files: ['**/*.{js,jsx,ts,tsx}'],
 		languageOptions: {
 			parser,
 			ecmaVersion: 'latest',
@@ -27,6 +26,13 @@ export default defineConfig([
 
 		plugins: {
 			'@typescript-eslint': tsPlugin
+		},
+
+		files: ['**/*.test.{ts,tsx}'],
+		languageOptions: {
+			globals: {
+				...globals.jest
+			}
 		},
 
 		rules: {

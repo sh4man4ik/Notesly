@@ -6,7 +6,6 @@ const EN_TEXTS = {
 
 function getText(path: string) {
 	let language = navigator.language.slice(0, 2);
-
 	let TEXTS: any;
 
 	switch (language) {
