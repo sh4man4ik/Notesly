@@ -1,7 +1,14 @@
 @import 'tailwindcss';
 
+/* For elements: bg-base-300 text-base-content */
+/* For buttons: btn-accent */
+
 @plugin "daisyui" {
 	themes:
-		emerald --default,
+		nord --default,
 		dim --prefersdark;
+}
+
+.margin-top {
+	margin-top: clamp(40px, 8vw, 80px);
 }
