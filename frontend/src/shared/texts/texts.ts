@@ -3,6 +3,7 @@ const EN_TEXTS = {
 		title: 'Notesly'
 	}
 };
+/* Here you can add other languages */
 
 function getText(path: string) {
 	let language = navigator.language.slice(0, 2);
