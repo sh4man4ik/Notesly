@@ -10,20 +10,21 @@ const EN_TEXTS = {
 	},
 	cards: {
 		firstCard: {
-			title: 'Title 1',
-			text: 'Text 1'
+			title: 'No registration required',
+			text: 'You can start using the website easily and simply at any time'
 		},
 		secondCard: {
-			title: 'Title 2',
-			text: 'Text 2'
+			title: 'Source code is open',
+			text: 'All source code is available in the GitHub repository',
+			button: 'OPEN'
 		},
 		thirdCard: {
-			title: 'Title 3',
-			text: 'Text 3'
+			title: 'Synchronization between devices',
+			text: 'With a special key, you can synchronize between different devices'
 		},
 		fourthCard: {
-			title: 'Title 4',
-			text: 'Text 4'
+			title: 'Website is free',
+			text: 'The website is completely free for all users'
 		}
 	},
 	FAQ: {
@@ -37,7 +38,7 @@ const EN_TEXTS = {
 		},
 		thirdQuestion: {
 			title: 'Is the website free?',
-			text: 'Yes, the site is absolutely free.'
+			text: 'Yes, the website is absolutely free.'
 		}
 	},
 	footer: {
