@@ -1,8 +1,5 @@
 @import 'tailwindcss';
 
-/* For elements: bg-base-300 text-base-content */
-/* For buttons: btn-accent */
-
 @plugin "daisyui" {
 	themes:
 		nord --default,

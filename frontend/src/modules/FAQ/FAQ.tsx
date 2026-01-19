@@ -4,17 +4,17 @@ function FAQ() {
 	return (
 		<>
 			<div className="margin-top grid gap-2 w-[90%] max-w-2xl mx-auto">
-				<div className="collapse collapse-arrow bg-base-300 text-base-content border border-base-300">
+				<div className="collapse collapse-arrow bg-neutral text-neutral-content border border-base-300">
 					<input type="radio" name="my-accordion-2" defaultChecked />
 					<div className="collapse-title font-semibold">{getText('FAQ.firstQuestion.title')}</div>
 					<div className="collapse-content text-sm">{getText('FAQ.firstQuestion.text')}</div>
 				</div>
-				<div className="collapse collapse-arrow bg-base-300 text-base-content border border-base-300">
+				<div className="collapse collapse-arrow bg-neutral text-neutral-content border border-base-300">
 					<input type="radio" name="my-accordion-2" />
 					<div className="collapse-title font-semibold">{getText('FAQ.secondQuestion.title')}</div>
 					<div className="collapse-content text-sm">{getText('FAQ.secondQuestion.text')}</div>
 				</div>
-				<div className="collapse collapse-arrow bg-base-300 text-base-content border border-base-300">
+				<div className="collapse collapse-arrow bg-neutral text-neutral-content border border-base-300">
 					<input type="radio" name="my-accordion-2" />
 					<div className="collapse-title font-semibold">{getText('FAQ.thirdQuestion.title')}</div>
 					<div className="collapse-content text-sm">{getText('FAQ.thirdQuestion.text')}</div>
