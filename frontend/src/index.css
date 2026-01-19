@@ -6,6 +6,12 @@
 		dim --prefersdark;
 }
 
+* {
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
 .margin-top {
 	margin-top: clamp(40px, 8vw, 80px);
 }
