@@ -28,20 +28,16 @@ const EN_TEXTS = {
 	},
 	FAQ: {
 		firstQuestion: {
-			title: 'Title 1',
-			text: 'Text 1'
+			title: 'Is registration required?',
+			text: 'No, there is no registration on the website.'
 		},
 		secondQuestion: {
-			title: 'Title 2',
-			text: 'Text 2'
+			title: 'How does synchronization between devices work?',
+			text: 'A special key is used for synchronization, which can be copied and pasted on another device.'
 		},
 		thirdQuestion: {
-			title: 'Title 3',
-			text: 'Text 3'
-		},
-		fourthQuestion: {
-			title: 'Title 4',
-			text: 'Text 4'
+			title: 'Is the website free?',
+			text: 'Yes, the site is absolutely free.'
 		}
 	},
 	footer: {
