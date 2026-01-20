@@ -5,10 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"client": "vite",
-		"build": "tsc -b && vite build",
-		"test": "jest",
-		"lint": "eslint .",
-		"preview": "vite preview"
+		"test": "jest && eslint . && tsc --build"
 	},
 	"dependencies": {
 		"@remixicon/react": "^4.8.0",

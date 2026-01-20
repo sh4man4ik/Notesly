@@ -1,5 +1,6 @@
-import getText from '../../shared/texts/texts.ts';
-import ThemeController from '../../shared/ui/ThemeController/ThemeController.tsx';
+import { Link } from 'react-router-dom';
+import getText from '../../texts/texts.ts';
+import ThemeController from '../../ui/ThemeController/ThemeController.tsx';
 
 function Navbar() {
 	return (
@@ -31,7 +32,13 @@ function Navbar() {
 							<ul className="menu menu-horizontal flex items-center">
 								{/* Navbar menu content here */}
 								<li>
-									<a>{getText('navbar.button')}</a>
+									<Link to="/">{getText('navbar.firstElement')}</Link>
+								</li>
+								<li>
+									<Link to="/settings">{getText('navbar.secondElement')}</Link>
+								</li>
+								<li>
+									<Link to="/about">{getText('navbar.thirdElement')}</Link>
 								</li>
 								<li>
 									<ThemeController></ThemeController>
@@ -50,7 +57,13 @@ function Navbar() {
 							</li>
 						</div>
 						<li>
-							<a>{getText('navbar.button')}</a>
+							<Link to="/">{getText('navbar.firstElement')}</Link>
+						</li>
+						<li>
+							<Link to="/settings">{getText('navbar.secondElement')}</Link>
+						</li>
+						<li>
+							<Link to="/about">{getText('navbar.thirdElement')}</Link>
 						</li>
 					</ul>
 				</div>

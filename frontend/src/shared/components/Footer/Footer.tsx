@@ -1,4 +1,4 @@
-import getText from '../../shared/texts/texts';
+import getText from '../../texts/texts.ts';
 
 function Footer() {
 	return (

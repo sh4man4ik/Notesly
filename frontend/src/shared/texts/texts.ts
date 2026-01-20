@@ -1,7 +1,9 @@
 const EN_TEXTS = {
 	navbar: {
 		title: 'Notesly',
-		button: 'Get Started'
+		firstElement: 'Notes',
+		secondElement: 'Settings',
+		thirdElement: 'About'
 	},
 	hero: {
 		title: 'Always with you',
