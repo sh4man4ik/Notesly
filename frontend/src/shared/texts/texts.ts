@@ -6,7 +6,11 @@ const EN_TEXTS = {
 		thirdElement: 'About'
 	},
 	hero: {
-		title: 'Always with you',
+		title: {
+			firstWord: 'ALWAYS',
+			secondWord: 'WITH',
+			thirdWord: 'YOU'
+		},
 		subtitle: 'Notesly is always with you when you need it most',
 		button: 'Get Started'
 	},

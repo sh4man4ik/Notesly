@@ -7,7 +7,13 @@ function Hero() {
 			<div className="hero margin-top w-[90%] mx-auto">
 				<div className="hero-content text-center">
 					<div className="max-w-md">
-						<h1 className="text-5xl font-bold">{getText('hero.title')}</h1>
+						<span className="text-rotate text-7xl duration-5000">
+							<span className="justify-items-center">
+								<span>{getText('hero.title.firstWord')}</span>
+								<span>{getText('hero.title.secondWord')}</span>
+								<span>{getText('hero.title.thirdWord')}</span>
+							</span>
+						</span>
 						<p className="py-6">{getText('hero.subtitle')}</p>
 						<Link to="/">
 							<button className="btn btn-accent">{getText('hero.button')}</button>
