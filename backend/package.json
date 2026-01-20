@@ -15,7 +15,8 @@
 	"main": "eslint.config.js",
 	"scripts": {
 		"server": "node ./src/server.ts",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"check": "jest && eslint . && tsc --build",
+		"test": "jest"
 	},
 	"keywords": [],
 	"author": "",
