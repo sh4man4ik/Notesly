@@ -1,4 +1,3 @@
 export default {
-	preset: 'ts-jest',
 	testMatch: ['**/*.test.js', '**/*.test.jsx', '**/*.test.ts', '**/*.test.tsx']
 };
