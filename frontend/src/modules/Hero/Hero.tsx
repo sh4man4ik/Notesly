@@ -7,7 +7,7 @@ function Hero() {
 			<div className="hero margin-top w-[90%] mx-auto">
 				<div className="hero-content text-center">
 					<div className="max-w-md">
-						<span className="text-rotate text-7xl duration-5000">
+						<span className="text-rotate text-5xl sm:text-7xl duration-5000">
 							<span className="justify-items-center">
 								<span>{getText('hero.title.firstWord')}</span>
 								<span>{getText('hero.title.secondWord')}</span>
