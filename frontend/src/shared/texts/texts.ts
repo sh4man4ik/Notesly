@@ -36,7 +36,7 @@ const EN_TEXTS = {
 	steps: {
 		firstStep: 'Copy the key',
 		secondStep: 'Insert it into another device',
-		thirdStep: 'Synchronization completed'
+		thirdStep: 'Sync done'
 	},
 	FAQ: {
 		firstQuestion: {
