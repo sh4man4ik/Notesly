@@ -27,9 +27,9 @@ function Navbar() {
 								</svg>
 							</label>
 						</div>
-						<div className="mx-2 flex-1 px-2">{getText('navbar.title')}</div>
+						<div className="mx-2 flex-1 px-2 medium-font">{getText('navbar.title')}</div>
 						<div className="hidden flex-none lg:block">
-							<ul className="menu menu-horizontal flex items-center">
+							<ul className="menu menu-horizontal flex items-center medium-font">
 								{/* Navbar menu content here */}
 								<li>
 									<Link to="/">{getText('navbar.firstElement')}</Link>
@@ -49,7 +49,7 @@ function Navbar() {
 				</div>
 				<div className="drawer-side">
 					<label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-					<ul className="menu main-content-color min-h-full w-80 p-4">
+					<ul className="menu main-content-color min-h-full w-80 p-4 medium-font">
 						{/* Sidebar content here */}
 						<div className="flex justify-start">
 							<li>
