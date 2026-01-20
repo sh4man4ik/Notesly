@@ -5,7 +5,7 @@ function Card(props: any) {
 
 	return (
 		<>
-			<div className="card card-border bg-neutral text-neutral-content w-96">
+			<div className="card card-border main-content-color w-96">
 				<div className="card-body">
 					<div className="flex items-center gap-3">
 						<div>{props.icon}</div>

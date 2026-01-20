@@ -6,10 +6,26 @@
 		dim --prefersdark;
 }
 
+.main-content-color {
+	@apply bg-neutral text-neutral-content;
+}
+
 * {
 	font-family: 'Inter', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
+}
+
+.font-large {
+	font-size: 72px;
+}
+
+.font-medium {
+	font-size: 18px;
+}
+
+.font-small {
+	font-size: 14px;
 }
 
 .margin-top {

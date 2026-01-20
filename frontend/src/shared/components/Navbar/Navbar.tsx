@@ -9,7 +9,7 @@ function Navbar() {
 				<input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 				<div className="drawer-content flex flex-col">
 					{/* Navbar */}
-					<div className="navbar bg-neutral text-neutral-content w-full">
+					<div className="navbar main-content-color w-full">
 						<div className="flex-none lg:hidden">
 							<label htmlFor="my-drawer-2" aria-label="open sidebar" className="btn btn-square btn-ghost">
 								<svg
@@ -49,7 +49,7 @@ function Navbar() {
 				</div>
 				<div className="drawer-side">
 					<label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-					<ul className="menu bg-neutral text-neutral-content min-h-full w-80 p-4">
+					<ul className="menu main-content-color min-h-full w-80 p-4">
 						{/* Sidebar content here */}
 						<div className="flex justify-start">
 							<li>

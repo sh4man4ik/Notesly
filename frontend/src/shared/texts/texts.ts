@@ -33,6 +33,11 @@ const EN_TEXTS = {
 			text: 'The website is completely free for all users'
 		}
 	},
+	steps: {
+		firstStep: 'Copy the key',
+		secondStep: 'Insert it into another device',
+		thirdStep: 'Synchronization completed'
+	},
 	FAQ: {
 		firstQuestion: {
 			title: 'Is registration required?',
