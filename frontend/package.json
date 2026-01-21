@@ -6,7 +6,8 @@
 	"scripts": {
 		"client": "vite",
 		"check": "jest && eslint . && tsc --build",
-		"test": "jest"
+		"test": "jest",
+		"build": "vite build"
 	},
 	"dependencies": {
 		"@remixicon/react": "^4.8.0",
