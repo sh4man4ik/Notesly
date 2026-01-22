@@ -1,8 +1,8 @@
-import Navbar from '../../shared/components/Navbar';
+import Navbar from '../../shared/components/Navbar/Navbar';
 import Hero from '../../modules/Hero';
 import Cards from '../../modules/Cards';
 import FAQ from '../../modules/FAQ';
-import Footer from '../../shared/components/Footer';
+import Footer from '../../shared/components/Footer/Footer';
 import Steps from '../../modules/Steps';
 
 function AboutPage() {
