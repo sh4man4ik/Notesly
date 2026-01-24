@@ -29,7 +29,7 @@ function InsertSpecialKeyModal(props: any) {
 					</form>
 
 					<div className="grid gap-6">
-						<p className="small-font">{getText('keyFieldset.modal.title')}</p>
+						<p className="small-font mr-[14px]">{getText('keyFieldset.modal.title')}</p>
 
 						<div className="join">
 							<input
