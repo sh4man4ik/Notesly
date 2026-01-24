@@ -54,6 +54,11 @@ const EN_TEXTS = {
 	},
 	footer: {
 		text: `Copyright © ${new Date().getFullYear()} - Made with love ❤️`
+	},
+	keyFieldset: {
+		title: 'Special key',
+		firstButton: 'COPY',
+		secondButton: 'REMAKE'
 	}
 };
 /* Here you can add other languages */
