@@ -13,7 +13,7 @@
 }
 
 .main-content-color {
-	@apply bg-neutral text-neutral-content;
+	@apply bg-base-300 text-base-content;
 }
 
 .large-font {

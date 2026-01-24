@@ -12,7 +12,7 @@ function InsertSpecialKeyModal(props: any) {
 	return (
 		<>
 			<button
-				className="btn btn-primary flex-1 small-font"
+				className="btn btn-success flex-1 small-font"
 				onClick={() => {
 					let modal = document.getElementById('input_key_modal') as HTMLDialogElement;
 					if (modal) {
@@ -40,7 +40,7 @@ function InsertSpecialKeyModal(props: any) {
 							/>
 
 							<form method="dialog">
-								<button className="btn btn-primary join-item small-font" onClick={updateSpecialKey}>
+								<button className="btn btn-success join-item small-font" onClick={updateSpecialKey}>
 									{getText('keyFieldset.modal.button')}
 								</button>
 							</form>
