@@ -58,7 +58,13 @@ const EN_TEXTS = {
 	keyFieldset: {
 		title: 'Special key',
 		firstButton: 'COPY',
-		secondButton: 'REMAKE'
+		secondButton: 'REMAKE',
+		thirdButton: 'INSERT KEY',
+		modal: {
+			title: 'Insert your special key here',
+			placeholder: 'special key',
+			button: 'SAVE'
+		}
 	}
 };
 /* Here you can add other languages */

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import Modal from './components/InsertSpecialKeyModal.tsx';
 import getText from '../../shared/texts/texts.ts';
 
 function KeyFieldset() {
@@ -18,6 +19,10 @@ function KeyFieldset() {
 		}
 	});
 
+	useEffect(() => {
+		console.log('update');
+	}, [specialKey]);
+
 	let copySpecialKey = () => {
 		navigator.clipboard.writeText(specialKey);
 	};
@@ -31,7 +36,12 @@ function KeyFieldset() {
 		<>
 			<fieldset className="fieldset justify-self-center margin-top">
 				<legend className="fieldset-legend small-font">{getText('keyFieldset.title')}</legend>
-				<input type="text" className="input small-font" value={specialKey} disabled />
+				<input
+					type="text"
+					className="input small-font bg-base-300 text-base-content"
+					value={specialKey}
+					disabled
+				/>
 				<div className="flex gap-2">
 					<button className="btn btn-accent flex-1 small-font" onClick={copySpecialKey}>
 						{getText('keyFieldset.firstButton')}
@@ -40,6 +50,7 @@ function KeyFieldset() {
 						{getText('keyFieldset.secondButton')}
 					</button>
 				</div>
+				<Modal setSpecialKey={setSpecialKey}></Modal>
 			</fieldset>
 		</>
 	);
