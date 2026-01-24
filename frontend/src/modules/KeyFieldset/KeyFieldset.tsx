@@ -29,14 +29,14 @@ function KeyFieldset() {
 
 	return (
 		<>
-			<fieldset className="fieldset justify-self-center margin-top small-font">
-				<legend className="fieldset-legend">{getText('keyFieldset.title')}</legend>
+			<fieldset className="fieldset justify-self-center margin-top">
+				<legend className="fieldset-legend small-font">{getText('keyFieldset.title')}</legend>
 				<input type="text" className="input small-font" value={specialKey} disabled />
 				<div className="flex gap-2">
-					<button className="btn btn-accent flex-1" onClick={copySpecialKey}>
+					<button className="btn btn-accent flex-1 small-font" onClick={copySpecialKey}>
 						{getText('keyFieldset.firstButton')}
 					</button>
-					<button className="btn btn-error flex-1" onClick={remakeSpecialKey}>
+					<button className="btn btn-error flex-1 small-font" onClick={remakeSpecialKey}>
 						{getText('keyFieldset.secondButton')}
 					</button>
 				</div>
