@@ -9,15 +9,7 @@ function KeyFieldset() {
 		return newSpecialKey;
 	};
 
-	let [specialKey, setSpecialKey] = useState(() => {
-		let receivedSpecialKey = localStorage.getItem('specialKey');
-
-		if (receivedSpecialKey) {
-			return receivedSpecialKey;
-		} else {
-			return generateSpecialKey();
-		}
-	});
+	let [specialKey, setSpecialKey] = useState(() => localStorage.getItem('specialKey') || generateSpecialKey());
 
 	useEffect(() => {
 		console.log('update');

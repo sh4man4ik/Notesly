@@ -65,6 +65,9 @@ const EN_TEXTS = {
 			placeholder: 'special key',
 			button: 'SAVE'
 		}
+	},
+	notes: {
+		placeholder: 'Write something...'
 	}
 };
 /* Here you can add other languages */
