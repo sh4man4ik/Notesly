@@ -1,11 +1,8 @@
 import { useState, useEffect } from 'react';
 
-/*
-	Dark theme is dim
-	Light theme is nord
-*/
-
 function ThemeController() {
+	let darkTheme = 'dim';
+	let lightTheme = 'nord';
 	let [theme, setTheme] = useState(() => {
 		let theme = localStorage.getItem('theme');
 
@@ -13,9 +10,9 @@ function ThemeController() {
 			return theme;
 		} else {
 			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				return 'dim';
+				return darkTheme;
 			} else {
-				return 'nord';
+				return lightTheme;
 			}
 		}
 	});
@@ -26,17 +23,22 @@ function ThemeController() {
 	}, [theme]);
 
 	let switchTheme = () => {
-		if (theme == 'dim') {
-			setTheme('nord');
+		if (theme == darkTheme) {
+			setTheme(lightTheme);
 		} else {
-			setTheme('dim');
+			setTheme(darkTheme);
 		}
 	};
 
 	return (
 		<>
 			<label className="swap swap-rotate">
-				<input type="checkbox" className="theme-controller" checked={theme == 'dim'} onChange={switchTheme} />
+				<input
+					type="checkbox"
+					className="theme-controller"
+					checked={theme == darkTheme}
+					onChange={switchTheme}
+				/>
 
 				{/* sun icon */}
 				<svg

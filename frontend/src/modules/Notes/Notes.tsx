@@ -12,7 +12,7 @@ function Notes() {
 		<>
 			<div className="flex justify-center flex-1">
 				<textarea
-					className="textarea outline-none main-content-color small-font mt-[2.5%] mb-[2.5%] w-[95%]"
+					className="textarea resize-none outline-none main-content-color small-font mt-[2.5%] mb-[2.5%] w-[95%]"
 					placeholder={getText('notes.placeholder')}
 					id="notes"
 					value={notes}
