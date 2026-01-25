@@ -33,7 +33,7 @@ function InsertSpecialKeyModal(props: any) {
 
 						<div className="join">
 							<input
-								className="input bg-base-300 text-base-content join-item small-font"
+								className="input outline-none bg-base-300 text-base-content join-item small-font"
 								placeholder={getText('keyFieldset.modal.placeholder')}
 								value={insertedSpecialKey}
 								onChange={(event) => setInsertedSpecialKey(event.target.value)}
