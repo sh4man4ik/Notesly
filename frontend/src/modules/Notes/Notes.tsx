@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import getText from '../../shared/texts/texts';
 
 function Notes() {
-	let [notes, setNotes] = useState(() => localStorage.getItem('notes') || '');
+	let [notes, setNotes] = useState(() => {
+		return localStorage.getItem('notes') || '';
+	});
 
 	useEffect(() => {
 		localStorage.setItem('notes', notes);
