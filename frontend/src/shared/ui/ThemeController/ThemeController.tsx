@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function ThemeController() {
 	let darkTheme = 'dim';
-	let lightTheme = 'nord';
+	let lightTheme = 'winter';
 	let [theme, setTheme] = useState(() => {
 		let theme = localStorage.getItem('theme');
 
