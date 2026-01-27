@@ -40,16 +40,16 @@ const EN_TEXTS = {
 	},
 	FAQ: {
 		firstQuestion: {
-			title: 'Is registration required?',
-			text: 'No, there is no registration on the website.'
+			title: 'What does the INSERT button do?',
+			text: 'The INSERT button synchronizes your notes with another device whose special key you have entered. Your old notes will be deleted and replaced with new, synchronized ones.'
 		},
 		secondQuestion: {
-			title: 'How does synchronization between devices work?',
-			text: 'A special key is used for synchronization, which can be copied and pasted on another device.'
+			title: 'What does the DISCONNECT button do?',
+			text: 'The DISCONNECT button disconnects your synchronized device from others. Your key is updated to a new one and your notes are cleared.'
 		},
 		thirdQuestion: {
-			title: 'Is the website free?',
-			text: 'Yes, the website is absolutely free.'
+			title: 'What happens if you click DISCONNECT on first device and clear your browser data without visiting the website on second device?',
+			text: 'After clicking the DISCONNECT button on first device and clearing the browser data on the second, the data on the second device will be lost. To prevent this from happening, simply switch to the second device website so that the data is recorded in the database.'
 		}
 	},
 	footer: {
