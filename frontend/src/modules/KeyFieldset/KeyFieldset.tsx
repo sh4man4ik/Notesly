@@ -40,11 +40,11 @@ function KeyFieldset() {
 					<button className="btn btn-accent flex-1 small-font" onClick={copySpecialKey}>
 						{getText('keyFieldset.firstButton')}
 					</button>
-					<button className="btn btn-error flex-1 small-font" onClick={remakeSpecialKey}>
-						{getText('keyFieldset.secondButton')}
-					</button>
+					<Modal setSpecialKey={setSpecialKey}></Modal>
 				</div>
-				<Modal setSpecialKey={setSpecialKey}></Modal>
+				<button className="btn btn-error flex-1 small-font" onClick={remakeSpecialKey}>
+					{getText('keyFieldset.secondButton')}
+				</button>
 			</fieldset>
 		</>
 	);
