@@ -13,10 +13,6 @@ function KeyFieldset() {
 		return localStorage.getItem('specialKey') || generateSpecialKey();
 	});
 
-	useEffect(() => {
-		console.log('update');
-	}, [specialKey]);
-
 	let copySpecialKey = () => {
 		navigator.clipboard.writeText(specialKey);
 	};
