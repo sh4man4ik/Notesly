@@ -16,6 +16,10 @@
 	@apply bg-base-300 text-base-content;
 }
 
+.alert-style {
+	@apply w-[85%] max-w-[500px] absolute top-[50px] left-1/2 transform -translate-x-1/2 transition-opacity duration-200;
+}
+
 .large-font {
 	font-size: 48px;
 }

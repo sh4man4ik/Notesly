@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Modal from './components/InsertSpecialKeyModal.tsx';
+import SuccessAlert from '../../shared/ui/SuccessAlert/SuccessAlert.tsx';
 import getText from '../../shared/texts/texts.ts';
 
 function KeyFieldset() {
@@ -12,9 +13,15 @@ function KeyFieldset() {
 	let [specialKey, setSpecialKey] = useState(() => {
 		return localStorage.getItem('specialKey') || generateSpecialKey();
 	});
+	let [showAlert, setShowAlert] = useState(false);
 
 	let copySpecialKey = () => {
 		navigator.clipboard.writeText(specialKey);
+
+		setShowAlert(true);
+		setTimeout(() => {
+			setShowAlert(false);
+		}, 2500);
 	};
 
 	let remakeSpecialKey = () => {
@@ -42,6 +49,8 @@ function KeyFieldset() {
 					{getText('keyFieldset.secondButton')}
 				</button>
 			</fieldset>
+
+			<SuccessAlert text={getText('alert.success.firstText')} show={showAlert}></SuccessAlert>
 		</>
 	);
 }

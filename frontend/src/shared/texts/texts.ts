@@ -68,6 +68,17 @@ const EN_TEXTS = {
 	},
 	notes: {
 		placeholder: 'Write something...'
+	},
+	alert: {
+		success: {
+			firstText: 'Message copied successfully!'
+		},
+		info: {
+			firstText: ''
+		},
+		error: {
+			firstText: ''
+		}
 	}
 };
 /* Here you can add other languages */
