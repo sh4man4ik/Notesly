@@ -15,6 +15,7 @@ const EN_TEXTS = {
 		button: 'Get Started'
 	},
 	cards: {
+		title: 'Why choose this website?',
 		firstCard: {
 			title: 'No registration required',
 			text: 'You can start using the website easily and simply at any time'
@@ -34,11 +35,13 @@ const EN_TEXTS = {
 		}
 	},
 	steps: {
+		title: 'How to synchronize?',
 		firstStep: 'Copy the key',
 		secondStep: 'Insert it into another device',
 		thirdStep: 'Sync done'
 	},
 	FAQ: {
+		title: 'FAQ',
 		firstQuestion: {
 			title: 'What does the INSERT button do?',
 			text: 'The INSERT button synchronizes your notes with another device whose special key you have entered. Your old notes will be deleted and replaced with new, synchronized ones.'

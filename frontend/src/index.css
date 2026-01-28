@@ -40,3 +40,7 @@
 .margin-top {
 	margin-top: clamp(40px, 8vw, 80px);
 }
+
+.margin-bottom {
+	margin-bottom: clamp(20px, 4vw, 40px);
+}
