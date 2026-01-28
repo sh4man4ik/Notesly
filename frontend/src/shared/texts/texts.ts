@@ -44,15 +44,15 @@ const EN_TEXTS = {
 		title: 'FAQ',
 		firstQuestion: {
 			title: 'What does the INSERT button do?',
-			text: 'The INSERT button synchronizes your notes with another device whose special key you have entered. Your old notes will be deleted and replaced with new, synchronized ones.'
+			text: 'INSERT syncs your notes with another device using a special key. Existing notes will be replaced with the synced ones.'
 		},
 		secondQuestion: {
 			title: 'What does the DISCONNECT button do?',
-			text: 'The DISCONNECT button disconnects your synchronized device from others. Your key is updated to a new one and your notes are cleared.'
+			text: 'DISCONNECT unlinks your device, generates a new key, and clears all notes.'
 		},
 		thirdQuestion: {
-			title: 'What happens if you click DISCONNECT on first device and clear your browser data without visiting the website on second device?',
-			text: 'After clicking the DISCONNECT button on first device and clearing the browser data on the second, the data on the second device will be lost. To prevent this from happening, simply switch to the second device website so that the data is recorded in the database.'
+			title: 'What if you click DISCONNECT on the first device and clear browser data on the second?',
+			text: 'Notes on the second device will be lost unless you open the website there first so the data can be saved.'
 		}
 	},
 	footer: {
