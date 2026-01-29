@@ -5,13 +5,15 @@
 	"type": "module",
 	"scripts": {
 		"client": "vite",
-		"check": "jest && eslint . && tsc --build",
 		"test": "jest",
+		"lint": "eslint .",
+		"ts": "tsc --build",
 		"build": "vite build"
 	},
 	"dependencies": {
 		"@remixicon/react": "^4.8.0",
 		"@tailwindcss/vite": "^4.1.18",
+		"@tiptap/react": "^3.18.0",
 		"@typescript-eslint/eslint-plugin": "^8.52.0",
 		"@typescript-eslint/parser": "^8.52.0",
 		"react": "^19.2.0",

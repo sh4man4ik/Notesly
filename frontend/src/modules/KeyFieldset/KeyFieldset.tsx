@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Modal from './components/InsertSpecialKeyModal.tsx';
+import Modal from './components/InsertSpecialKeyModal/InsertSpecialKeyModal.tsx';
 import SuccessAlert from '../../shared/ui/SuccessAlert/SuccessAlert.tsx';
 import getText from '../../shared/texts/texts.ts';
 

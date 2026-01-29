@@ -1,5 +1,5 @@
 import getText from '../../shared/texts/texts.ts';
-import Card from './components/Card';
+import Card from './components/Card/Card.tsx';
 import Title from '../../shared/ui/Title/Title.tsx';
 import { RiCloseLargeLine, RiGithubFill, RiLoopLeftLine, RiWallet3Line } from '@remixicon/react';
 

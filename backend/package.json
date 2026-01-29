@@ -18,8 +18,9 @@
 	"main": "eslint.config.js",
 	"scripts": {
 		"server": "node ./src/server.ts",
-		"check": "jest && eslint . && tsc --noEmit",
-		"test": "jest"
+		"test": "jest",
+		"lint": "eslint .",
+		"ts": "tsc --noEmit"
 	},
 	"keywords": [],
 	"author": "",

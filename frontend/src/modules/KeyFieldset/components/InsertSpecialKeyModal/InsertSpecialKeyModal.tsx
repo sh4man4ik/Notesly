@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import getText from '../../../shared/texts/texts.ts';
+import getText from '../../../../shared/texts/texts.ts';
 
 function InsertSpecialKeyModal(props: any) {
 	let [insertedSpecialKey, setInsertedSpecialKey] = useState('');
