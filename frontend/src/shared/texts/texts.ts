@@ -69,9 +69,6 @@ const EN_TEXTS = {
 			button: 'SAVE'
 		}
 	},
-	notes: {
-		placeholder: 'Write something...'
-	},
 	alert: {
 		success: {
 			firstText: 'Message copied successfully!'

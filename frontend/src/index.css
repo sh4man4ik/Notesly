@@ -53,11 +53,3 @@
 .margin-bottom {
 	margin-bottom: clamp(20px, 4vw, 40px);
 }
-
-/* notes placeholder style */
-
-.quill > .ql-container > .ql-editor.ql-blank::before {
-	font-style: normal;
-	font-size: 14px;
-	@apply text-base-content;
-}
