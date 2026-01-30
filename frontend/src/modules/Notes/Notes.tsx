@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import getText from '../../shared/texts/texts';
 import ReactQuill from 'react-quill-new';
 import 'react-quill-new/dist/quill.bubble.css';
 
@@ -35,6 +36,7 @@ function Notes() {
 					value={notes}
 					className="textarea w-[95%] mt-[2.5%] mb-[2.5%] main-content-color rounded-lg outline-none"
 					onChange={setNotes}
+					placeholder={getText('notes.placeholder')}
 				></ReactQuill>
 			</div>
 		</>

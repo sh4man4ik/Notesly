@@ -58,6 +58,9 @@ const EN_TEXTS = {
 	footer: {
 		text: `Copyright © ${new Date().getFullYear()} - Made with love ❤️`
 	},
+	notes: {
+		placeholder: 'Write something...'
+	},
 	keyFieldset: {
 		title: 'Special key',
 		firstButton: 'COPY',
