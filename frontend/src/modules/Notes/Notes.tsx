@@ -1,10 +1,16 @@
 import { useState, useEffect } from 'react';
 import getText from '../../shared/texts/texts';
+import ReactQuill from 'react-quill-new';
+import 'react-quill-new/dist/quill.bubble.css';
 
 function Notes() {
 	let [notes, setNotes] = useState(() => {
 		return localStorage.getItem('notes') || '';
 	});
+
+	const modules = {
+		toolbar: []
+	};
 
 	useEffect(() => {
 		localStorage.setItem('notes', notes);
@@ -13,13 +19,14 @@ function Notes() {
 	return (
 		<>
 			<div className="flex justify-center flex-1">
-				<textarea
-					className="textarea resize-none outline-none main-content-color small-font mt-[2.5%] mb-[2.5%] w-[95%]"
-					placeholder={getText('notes.placeholder')}
-					id="notes"
+				<ReactQuill
+					theme="bubble"
+					// modules={modules}
 					value={notes}
-					onChange={(event) => setNotes(event.target.value)}
-				></textarea>
+					className="w-[95%] mt-[2.5%] mb-[2.5%] main-content-color rounded-lg"
+					onChange={setNotes}
+					placeholder={getText('notes.placeholder')}
+				></ReactQuill>
 			</div>
 		</>
 	);
