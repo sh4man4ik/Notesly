@@ -34,7 +34,7 @@ function Notes() {
 					theme="bubble"
 					modules={modules}
 					value={notes}
-					className="textarea w-[95%] mt-[2.5%] mb-[2.5%] main-content-color rounded-lg outline-none"
+					className="textarea main-content-color outline-none w-[95%] mt-[2.5%] mb-[2.5%]"
 					onChange={setNotes}
 					placeholder={getText('notes.placeholder')}
 				></ReactQuill>
