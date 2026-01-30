@@ -6,18 +6,26 @@
 		dim --prefersdark;
 }
 
+/* font for all elements*/
+
 * {
 	font-family: 'Inter', sans-serif;
 	font-optical-sizing: auto;
 }
 
+/* main color of content */
+
 .main-content-color {
 	@apply bg-base-300 text-base-content;
 }
 
+/* alert style */
+
 .alert-style {
 	@apply w-[85%] max-w-[500px] absolute bottom-[30px] left-1/2 transform -translate-x-1/2 transition-opacity duration-200;
 }
+
+/* font size */
 
 .large-font {
 	font-size: 48px;
@@ -36,10 +44,20 @@
 	font-size: 14px;
 }
 
+/* margin */
+
 .margin-top {
 	margin-top: clamp(40px, 8vw, 80px);
 }
 
 .margin-bottom {
 	margin-bottom: clamp(20px, 4vw, 40px);
+}
+
+/* notes placeholder style */
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+	font-style: normal;
+	font-size: 14px;
+	@apply text-base-content;
 }

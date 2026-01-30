@@ -9,7 +9,13 @@ function Notes() {
 	});
 
 	const modules = {
-		toolbar: []
+		toolbar: [
+			[{ header: [1, 2, 3, false] }],
+			['bold', 'italic', 'underline'],
+			['link'],
+			[{ list: 'ordered' }, { list: 'bullet' }],
+			['clean']
+		]
 	};
 
 	useEffect(() => {
@@ -21,9 +27,9 @@ function Notes() {
 			<div className="flex justify-center flex-1">
 				<ReactQuill
 					theme="bubble"
-					// modules={modules}
+					modules={modules}
 					value={notes}
-					className="w-[95%] mt-[2.5%] mb-[2.5%] main-content-color rounded-lg"
+					className="textarea w-[95%] mt-[2.5%] mb-[2.5%] main-content-color rounded-lg outline-none"
 					onChange={setNotes}
 					placeholder={getText('notes.placeholder')}
 				></ReactQuill>
