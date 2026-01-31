@@ -15,7 +15,7 @@ function Notes() {
 				'bold',
 				'italic',
 				'underline',
-				'link',
+				{ align: [] },
 				{ list: 'ordered' },
 				{ list: 'bullet' },
 				'clean'
