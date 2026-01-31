@@ -51,8 +51,8 @@ const EN_TEXTS = {
 			text: 'DISCONNECT unlinks your device, generates a new key, and clears all notes.'
 		},
 		thirdQuestion: {
-			title: 'What if you click DISCONNECT on the first device and clear browser data on the second?',
-			text: 'Notes on the second device will be lost unless you open the website there first so the data can be saved.'
+			title: 'Why is it better not to delete website data?',
+			text: 'If you disconnect the first device and clear browser data on the second, any notes on the second device can be lost. To avoid this, open the notes page on the second device first so the data is saved.'
 		}
 	},
 	footer: {
