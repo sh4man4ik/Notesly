@@ -35,7 +35,9 @@ function Notes() {
 					modules={modules}
 					value={notes}
 					className="textarea main-content-color outline-none w-[95%] mt-[2.5%] mb-[2.5%]"
-					onChange={setNotes}
+					onChange={(event) => {
+						setNotes(event);
+					}}
 					placeholder={getText('notes.placeholder')}
 				></ReactQuill>
 			</div>
