@@ -16,30 +16,16 @@ app.use(express.json());
 /* mongodb */
 const url = process.env.MONGODB_URI || '';
 const mongoClient = new MongoClient(url);
-let notesCollection: any;
 
 /* server */
-app.post('/api/updateNotes', async (req, res) => {
-	const data = req.body;
-
-	let result = await notesCollection.findOne({ key: data.key });
-
-	if (result === null) {
-		await notesCollection.insertOne(data);
-	} else {
-		await notesCollection.findOneAndUpdate({ key: data.key }, { $set: { note: data.note } });
-	}
-
-	res.end();
+app.get('/test', async (req, res) => {
+	res.send('Hi from server');
 });
 
 async function runServer() {
 	try {
 		await mongoClient.connect();
 		console.log('Connected to MongoDB');
-
-		const noteslyDB = mongoClient.db('notesly');
-		notesCollection = noteslyDB.collection('notes');
 
 		app.listen(port, () => console.log(`Server is listening on port ${port}`));
 	} catch (error) {
