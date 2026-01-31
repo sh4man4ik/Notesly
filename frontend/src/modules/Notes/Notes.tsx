@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import getText from '../../shared/texts/texts';
+import updateNotes from './api/updateNotes';
 import ReactQuill from 'react-quill-new';
 import 'react-quill-new/dist/quill.bubble.css';
 
@@ -25,6 +26,7 @@ function Notes() {
 
 	useEffect(() => {
 		localStorage.setItem('notes', notes);
+		updateNotes();
 	}, [notes]);
 
 	return (
