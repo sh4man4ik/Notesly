@@ -17,8 +17,8 @@ const EN_TEXTS = {
 	cards: {
 		title: 'Why choose this website?',
 		firstCard: {
-			title: 'No registration required',
-			text: 'You can start using the website easily and simply at any time'
+			title: 'title',
+			text: 'text'
 		},
 		secondCard: {
 			title: 'Source code is open',
@@ -26,8 +26,8 @@ const EN_TEXTS = {
 			button: 'OPEN'
 		},
 		thirdCard: {
-			title: 'Synchronization between devices',
-			text: 'With a special key, you can synchronize between different devices'
+			title: 'title',
+			text: 'text'
 		},
 		fourthCard: {
 			title: 'Website is free',
@@ -35,24 +35,24 @@ const EN_TEXTS = {
 		}
 	},
 	steps: {
-		title: 'How to synchronize?',
-		firstStep: 'Copy the key',
-		secondStep: 'Insert it into another device',
-		thirdStep: 'Sync done'
+		title: 'title',
+		firstStep: 'step',
+		secondStep: 'step',
+		thirdStep: 'step'
 	},
 	FAQ: {
 		title: 'FAQ',
 		firstQuestion: {
-			title: 'What does the INSERT button do?',
-			text: 'INSERT syncs your notes with another device using a special key. Existing notes will be replaced with the synced ones.'
+			title: 'title',
+			text: 'text'
 		},
 		secondQuestion: {
-			title: 'What does the DISCONNECT button do?',
-			text: 'DISCONNECT unlinks your device, generates a new key, and clears all notes.'
+			title: 'title',
+			text: 'text'
 		},
 		thirdQuestion: {
-			title: 'Why is it better not to delete website data?',
-			text: 'If you disconnect the first device and clear browser data on the second, any notes on the second device can be lost. To avoid this, open the notes page on the second device first so the data is saved.'
+			title: 'title',
+			text: 'text'
 		}
 	},
 	footer: {
@@ -61,20 +61,9 @@ const EN_TEXTS = {
 	notes: {
 		placeholder: 'Write something...'
 	},
-	keyFieldset: {
-		title: 'Special key',
-		firstButton: 'COPY',
-		secondButton: 'DISCONNECT',
-		thirdButton: 'INSERT',
-		modal: {
-			title: 'Insert your special key here',
-			placeholder: 'special key',
-			button: 'SAVE'
-		}
-	},
 	alert: {
 		success: {
-			firstText: 'Message copied successfully!'
+			firstText: ''
 		},
 		info: {
 			firstText: ''
