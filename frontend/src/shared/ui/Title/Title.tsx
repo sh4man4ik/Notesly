@@ -1,7 +1,7 @@
 function Title(props: any) {
 	return (
 		<>
-			<p className="font-bold medium-font text-center margin-bottom">{props.text}</p>
+			<p className="font-bold medium-font text-center">{props.text}</p>
 		</>
 	);
 }

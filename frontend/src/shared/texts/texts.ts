@@ -62,6 +62,7 @@ const EN_TEXTS = {
 		placeholder: 'Write something...'
 	},
 	accessKey: {
+		title: 'Link settings',
 		firstButton: 'COPY',
 		secondButton: 'REMAKE'
 	},

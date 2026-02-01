@@ -7,7 +7,9 @@ function Cards() {
 	return (
 		<>
 			<div className="margin-top">
-				<Title text={getText('cards.title')}></Title>
+				<div className="margin-bottom">
+					<Title text={getText('cards.title')}></Title>
+				</div>
 				<div className="flex flex-wrap justify-center gap-6 w-[90%] max-w-6xl mx-auto">
 					<Card
 						icon={<RiCloseLargeLine />}

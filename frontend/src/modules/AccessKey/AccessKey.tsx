@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import SuccessAlert from '../../shared/ui/SuccessAlert/SuccessAlert.tsx';
+import Title from '../../shared/ui/Title/Title.tsx';
 import getText from '../../shared/texts/texts.ts';
 
 function AccessKey() {
@@ -37,23 +38,26 @@ function AccessKey() {
 
 	return (
 		<>
-			<fieldset className="fieldset justify-self-center margin-top">
-				<legend className="fieldset-legend small-font">{getText('keyFieldset.title')}</legend>
-				<input
-					type="text"
-					className="input small-font bg-base-300 text-base-content"
-					value={url + key}
-					disabled
-				/>
-				<div className="flex gap-2">
-					<button className="btn btn-accent flex-1 small-font" onClick={copyKey}>
-						{getText('accessKey.firstButton')}
-					</button>
-					<button className="btn btn-error flex-1 small-font" onClick={remakeKey}>
-						{getText('accessKey.secondButton')}
-					</button>
-				</div>
-			</fieldset>
+			<div className="margin-top">
+				<Title text={getText('accessKey.title')}></Title>
+				<fieldset className="fieldset justify-self-center">
+					<legend className="fieldset-legend small-font">{getText('keyFieldset.title')}</legend>
+					<input
+						type="text"
+						className="input small-font bg-base-300 text-base-content"
+						value={url + key}
+						disabled
+					/>
+					<div className="flex gap-2">
+						<button className="btn btn-accent flex-1 small-font" onClick={copyKey}>
+							{getText('accessKey.firstButton')}
+						</button>
+						<button className="btn btn-error flex-1 small-font" onClick={remakeKey}>
+							{getText('accessKey.secondButton')}
+						</button>
+					</div>
+				</fieldset>
+			</div>
 
 			<SuccessAlert text={getText('alert.success.firstText')} show={showAlert}></SuccessAlert>
 		</>

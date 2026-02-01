@@ -5,7 +5,9 @@ function Steps() {
 	return (
 		<>
 			<div className="margin-top">
-				<Title text={getText('steps.title')}></Title>
+				<div className="margin-bottom">
+					<Title text={getText('steps.title')}></Title>
+				</div>
 				<div className="w-[90%] mx-auto">
 					<ul className="timeline timeline-vertical">
 						<li>

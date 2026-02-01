@@ -5,7 +5,9 @@ function FAQ() {
 	return (
 		<>
 			<div className="margin-top">
-				<Title text={getText('FAQ.title')}></Title>
+				<div className="margin-bottom">
+					<Title text={getText('FAQ.title')}></Title>
+				</div>
 				<div className="grid gap-2 w-[90%] max-w-2xl mx-auto">
 					<div className="collapse collapse-arrow main-content-color border border-base-300">
 						<input type="radio" name="my-accordion-2" defaultChecked />
