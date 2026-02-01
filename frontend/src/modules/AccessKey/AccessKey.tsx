@@ -13,7 +13,7 @@ function AccessKey() {
 	/* prod https://notesly-sync.netlify.app/?key= */
 	/* dev http://localhost:443/?key= */
 
-	let url = 'http://localhost:443/?key=';
+	let url = 'https://notesly-sync.netlify.app/?key=';
 
 	let generateKey = () => {
 		let newKey = crypto.randomUUID();

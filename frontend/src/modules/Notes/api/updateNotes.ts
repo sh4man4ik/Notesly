@@ -8,7 +8,7 @@ function updateNotes() {
 	/* dev http://localhost:5000/api/updateNotes */
 
 	if (key) {
-		fetch('http://localhost:5000/api/updateNotes', {
+		fetch('https://notesly.onrender.com/api/updateNotes', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

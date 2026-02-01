@@ -8,7 +8,7 @@ async function getNotes() {
 	/* dev http://localhost:5000/api/getNotes */
 
 	try {
-		let response: any = await fetch('http://localhost:5000/api/getNotes', {
+		let response: any = await fetch('https://notesly.onrender.com/api/getNotes', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

@@ -2,7 +2,7 @@ async function updateOldKey(oldKey: any, newKey: any) {
 	/* prod https://notesly.onrender.com/api/remakeKey */
 	/* dev http://localhost:5000/api/remakeKey */
 
-	fetch('http://localhost:5000/api/remakeKey', {
+	fetch('https://notesly.onrender.com/api/remakeKey', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json'
