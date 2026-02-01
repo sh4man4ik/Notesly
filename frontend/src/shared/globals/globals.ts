@@ -17,10 +17,8 @@ function initGlobals() {
 	}
 
 	/* key */
-	let url = 'http://localhost:443/';
-
 	if (!localStorage.getItem('key')) {
-		let key = url + crypto.randomUUID();
+		let key = crypto.randomUUID();
 		localStorage.setItem('key', key);
 	}
 }

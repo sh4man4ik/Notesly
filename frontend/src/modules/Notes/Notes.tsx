@@ -28,6 +28,12 @@ function Notes() {
 		localStorage.setItem('notes', event);
 	};
 
+	let getKeyFromURL = () => {
+		let params = new URLSearchParams(window.location.search);
+		let paramsKey = params.get('key');
+		console.log(paramsKey);
+	};
+
 	return (
 		<>
 			<div className="flex justify-center flex-1">

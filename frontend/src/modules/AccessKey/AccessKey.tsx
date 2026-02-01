@@ -7,15 +7,18 @@ function AccessKey() {
 		return localStorage.getItem('key') || '';
 	});
 	let [showAlert, setShowAlert] = useState(false);
-	let url = 'http://localhost:443/';
+
+	/* https://notesly-sync.netlify.app/?key= */
+	/* http://localhost:443/?key= */
+	let url = 'https://notesly-sync.netlify.app/?key=';
 
 	let generateKey = () => {
-		let newKey = url + crypto.randomUUID();
+		let newKey = crypto.randomUUID();
 		return newKey;
 	};
 
 	let copyKey = () => {
-		navigator.clipboard.writeText(key);
+		navigator.clipboard.writeText(url + key);
 
 		setShowAlert(true);
 
@@ -36,7 +39,12 @@ function AccessKey() {
 		<>
 			<fieldset className="fieldset justify-self-center margin-top">
 				<legend className="fieldset-legend small-font">{getText('keyFieldset.title')}</legend>
-				<input type="text" className="input small-font bg-base-300 text-base-content" value={key} disabled />
+				<input
+					type="text"
+					className="input small-font bg-base-300 text-base-content"
+					value={url + key}
+					disabled
+				/>
 				<div className="flex gap-2">
 					<button className="btn btn-accent flex-1 small-font" onClick={copyKey}>
 						{getText('accessKey.firstButton')}
