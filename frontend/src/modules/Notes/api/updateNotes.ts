@@ -2,7 +2,10 @@ function updateNotes() {
 	let key = localStorage.getItem('key');
 	let note = localStorage.getItem('notes');
 
-	fetch('http://localhost:5000/api/updateNotes', {
+	/* https://notesly-sync.netlify.app/api/updateNotes */
+	/* http://localhost:5000/api/updateNotes */
+
+	fetch('https://notesly-sync.netlify.app/api/updateNotes', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json'
