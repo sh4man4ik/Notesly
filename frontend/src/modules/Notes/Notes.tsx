@@ -1,12 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import getText from '../../shared/texts/texts';
+import getNotes from './api/getNotes';
+import updateNotes from './api/updateNotes';
 import ReactQuill from 'react-quill-new';
 import 'react-quill-new/dist/quill.bubble.css';
 
 function Notes() {
-	let [notes, setNotes] = useState(() => {
-		return localStorage.getItem('notes') || '';
-	});
+	let [notes, setNotes] = useState('');
+
+	useEffect(() => {
+		(async () => {
+			let data = await getNotes();
+			if (data !== undefined) {
+				setNotes(data);
+			}
+		})();
+	}, []);
+
+	useEffect(() => {
+		updateNotes();
+	}, [notes]);
 
 	let modules = {
 		toolbar: [
@@ -24,14 +37,8 @@ function Notes() {
 	};
 
 	let handleChange = (event: any) => {
-		setNotes(event);
 		localStorage.setItem('notes', event);
-	};
-
-	let getKeyFromURL = () => {
-		let params = new URLSearchParams(window.location.search);
-		let paramsKey = params.get('key');
-		console.log(paramsKey);
+		setNotes(event);
 	};
 
 	return (
@@ -40,7 +47,7 @@ function Notes() {
 				<ReactQuill
 					theme="bubble"
 					modules={modules}
-					value={notes}
+					value={String(notes)}
 					className="textarea main-content-color outline-none w-[95%] mt-[2.5%] mb-[2.5%]"
 					onChange={handleChange}
 					placeholder={getText('notes.placeholder')}

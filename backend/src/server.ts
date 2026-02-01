@@ -16,11 +16,33 @@ app.use(express.json());
 /* mongodb */
 const url = process.env.MONGODB_URI || '';
 const mongoClient = new MongoClient(url);
-let notesCollection;
+let notesCollection: any;
 
 /* server */
-app.get('/test', async (req, res) => {
-	res.send('Hi from server');
+app.post('/api/getNotes', async (req, res) => {
+	let data = req.body;
+
+	let result = await notesCollection.findOne({ key: data.key });
+
+	if (result !== null) {
+		res.send(result);
+	} else {
+		res.end();
+	}
+});
+
+app.post('/api/updateNotes', async (req, res) => {
+	let data = req.body;
+
+	let result = await notesCollection.findOne({ key: data.key });
+
+	if (result === null) {
+		await notesCollection.insertOne(data);
+	} else {
+		await notesCollection.findOneAndUpdate({ key: data.key }, { $set: { note: data.note } });
+	}
+
+	res.end();
 });
 
 async function runServer() {

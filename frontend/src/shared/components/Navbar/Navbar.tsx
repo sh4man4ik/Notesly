@@ -3,6 +3,8 @@ import getText from '../../texts/texts.ts';
 import ThemeController from '../../ui/ThemeController/ThemeController.tsx';
 
 function Navbar() {
+	let key = localStorage.getItem('key');
+
 	return (
 		<>
 			<div className="drawer">
@@ -32,7 +34,7 @@ function Navbar() {
 							<ul className="menu menu-horizontal flex items-center medium-font">
 								{/* Navbar menu content here */}
 								<li>
-									<Link to="/">{getText('navbar.firstElement')}</Link>
+									<Link to={`/?key=${key}`}>{getText('navbar.firstElement')}</Link>
 								</li>
 								<li>
 									<Link to="/settings">{getText('navbar.secondElement')}</Link>
@@ -57,7 +59,7 @@ function Navbar() {
 							</li>
 						</div>
 						<li>
-							<Link to="/">{getText('navbar.firstElement')}</Link>
+							<Link to={`/?key=${key}`}>{getText('navbar.firstElement')}</Link>
 						</li>
 						<li>
 							<Link to="/settings">{getText('navbar.secondElement')}</Link>
