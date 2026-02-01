@@ -1,5 +1,7 @@
+import getKeyFromURL from '../../../shared/helpers/getKeyFromURL';
+
 function updateNotes() {
-	let key = localStorage.getItem('key');
+	let key = getKeyFromURL();
 	let note = localStorage.getItem('notes');
 
 	/* https://notesly.onrender.com/api/updateNotes */
