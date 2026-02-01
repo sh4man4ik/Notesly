@@ -53,6 +53,10 @@ app.post('/api/remakeKey', async (req, res) => {
 	res.end();
 });
 
+app.get('/', (req, res) => {
+	res.send('Express launched');
+});
+
 async function runServer() {
 	try {
 		await mongoClient.connect();
