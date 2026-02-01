@@ -1,9 +1,21 @@
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import getText from '../../texts/texts.ts';
+import getKeyFromURL from '../../helpers/getKeyFromURL.ts';
 import ThemeController from '../../ui/ThemeController/ThemeController.tsx';
 
 function Navbar() {
-	let key = localStorage.getItem('key');
+	let navigate = useNavigate();
+
+	/* navigate to current key */
+	let navigateToKey = () => {
+		let paramsKey = getKeyFromURL();
+
+		if (paramsKey === null) {
+			let key = localStorage.getItem('key');
+			navigate(`/?key=${key}`, { replace: true });
+		}
+	};
 
 	return (
 		<>
@@ -34,7 +46,7 @@ function Navbar() {
 							<ul className="menu menu-horizontal flex items-center medium-font">
 								{/* Navbar menu content here */}
 								<li>
-									<Link to={`/?key=${key}`}>{getText('navbar.firstElement')}</Link>
+									<div onClick={navigateToKey}>{getText('navbar.firstElement')}</div>
 								</li>
 								<li>
 									<Link to="/settings">{getText('navbar.secondElement')}</Link>
@@ -59,7 +71,7 @@ function Navbar() {
 							</li>
 						</div>
 						<li>
-							<Link to={`/?key=${key}`}>{getText('navbar.firstElement')}</Link>
+							<Link to="/">{getText('navbar.firstElement')}</Link>
 						</li>
 						<li>
 							<Link to="/settings">{getText('navbar.secondElement')}</Link>

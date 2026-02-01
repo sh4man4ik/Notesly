@@ -4,10 +4,11 @@ async function getNotes() {
 	let key = getKeyFromURL();
 	let notes;
 
-	/* https://notesly.onrender.com/api/getNotes */
-	/* http://localhost:5000/api/getNotes */
+	/* prod https://notesly.onrender.com/api/getNotes */
+	/* dev http://localhost:5000/api/getNotes */
+
 	try {
-		let response: any = await fetch('https://notesly.onrender.com/api/getNotes', {
+		let response: any = await fetch('http://localhost:5000/api/getNotes', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

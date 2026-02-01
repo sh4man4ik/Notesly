@@ -45,6 +45,14 @@ app.post('/api/updateNotes', async (req, res) => {
 	res.end();
 });
 
+app.post('/api/remakeKey', async (req, res) => {
+	let data = req.body;
+
+	await notesCollection.findOneAndUpdate({ key: data.oldKey }, { $set: { key: data.newKey } });
+
+	res.end();
+});
+
 async function runServer() {
 	try {
 		await mongoClient.connect();

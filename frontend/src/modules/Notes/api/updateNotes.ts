@@ -4,21 +4,23 @@ function updateNotes() {
 	let key = getKeyFromURL();
 	let note = localStorage.getItem('notes');
 
-	/* https://notesly.onrender.com/api/updateNotes */
-	/* http://localhost:5000/api/updateNotes */
+	/* prod https://notesly.onrender.com/api/updateNotes */
+	/* dev http://localhost:5000/api/updateNotes */
 
-	fetch('https://notesly.onrender.com/api/updateNotes', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json'
-		},
-		body: JSON.stringify({
-			key: key,
-			note: note
-		})
-	}).catch((error) => {
-		console.log(error);
-	});
+	if (key) {
+		fetch('http://localhost:5000/api/updateNotes', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				key: key,
+				note: note
+			})
+		}).catch((error) => {
+			console.log(error);
+		});
+	}
 }
 
 export default updateNotes;

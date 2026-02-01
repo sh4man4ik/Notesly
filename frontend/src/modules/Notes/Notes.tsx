@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import getKeyFromURL from '../../shared/helpers/getKeyFromURL';
 import getText from '../../shared/texts/texts';
 import getNotes from './api/getNotes';
 import updateNotes from './api/updateNotes';
@@ -7,15 +9,26 @@ import 'react-quill-new/dist/quill.bubble.css';
 
 function Notes() {
 	let [notes, setNotes] = useState('');
+	let navigate = useNavigate();
 
 	useEffect(() => {
+		/* navigate to current key */
+		let paramsKey = getKeyFromURL();
+
+		if (paramsKey === null) {
+			let key = localStorage.getItem('key');
+			navigate(`/?key=${key}`, { replace: true });
+		}
+
+		/* get notes from current key*/
 		(async () => {
 			let data = await getNotes();
+
 			if (data !== undefined) {
 				setNotes(data);
 			}
 		})();
-	}, []);
+	}, [navigate]);
 
 	useEffect(() => {
 		updateNotes();
