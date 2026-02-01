@@ -25,6 +25,7 @@ function Notes() {
 			let data = await getNotes();
 
 			if (data !== undefined) {
+				localStorage.setItem('notes', data);
 				setNotes(data);
 			}
 		})();
