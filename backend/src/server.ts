@@ -16,6 +16,7 @@ app.use(express.json());
 /* mongodb */
 const url = process.env.MONGODB_URI || '';
 const mongoClient = new MongoClient(url);
+let notesCollection;
 
 /* server */
 app.get('/test', async (req, res) => {
@@ -25,6 +26,8 @@ app.get('/test', async (req, res) => {
 async function runServer() {
 	try {
 		await mongoClient.connect();
+		let noteslyDB = mongoClient.db('notesly');
+		notesCollection = noteslyDB.collection('notes');
 		console.log('Connected to MongoDB');
 
 		app.listen(port, () => console.log(`Server is listening on port ${port}`));

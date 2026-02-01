@@ -61,9 +61,13 @@ const EN_TEXTS = {
 	notes: {
 		placeholder: 'Write something...'
 	},
+	accessKey: {
+		firstButton: 'COPY',
+		secondButton: 'REMAKE'
+	},
 	alert: {
 		success: {
-			firstText: ''
+			firstText: 'Link copied successfully!'
 		},
 		info: {
 			firstText: ''

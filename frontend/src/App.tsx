@@ -2,8 +2,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NotesPage from './pages/NotesPage/NotesPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import SettingsPage from './pages/SettingsPage/SettingsPage';
+import initGlobals from './shared/globals/globals';
 
 function App() {
+	initGlobals();
+
 	return (
 		<>
 			<BrowserRouter>

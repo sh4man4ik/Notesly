@@ -3,18 +3,9 @@ import { useState, useEffect } from 'react';
 function ThemeController() {
 	let darkTheme = 'dim';
 	let lightTheme = 'winter';
-	let [theme, setTheme] = useState(() => {
-		let theme = localStorage.getItem('theme');
 
-		if (theme) {
-			return theme;
-		} else {
-			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				return darkTheme;
-			} else {
-				return lightTheme;
-			}
-		}
+	let [theme, setTheme] = useState(() => {
+		return localStorage.getItem('theme') || '';
 	});
 
 	useEffect(() => {
