@@ -1,8 +1,9 @@
-async function updateOldKey(oldKey: any, newKey: any) {
-	/* prod https://notesly.onrender.com/api/remakeKey */
-	/* dev http://localhost:5000/api/remakeKey */
+import getApiLink from '../../../shared/helpers/getApiLink';
 
-	fetch('https://notesly.onrender.com/api/remakeKey', {
+async function updateOldKey(oldKey: any, newKey: any) {
+	let url = getApiLink();
+
+	fetch(`${url}/api/remakeKey`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json'

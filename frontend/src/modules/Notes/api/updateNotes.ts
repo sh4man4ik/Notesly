@@ -1,14 +1,13 @@
 import getKeyFromURL from '../../../shared/helpers/getKeyFromURL';
+import getApiLink from '../../../shared/helpers/getApiLink';
 
 function updateNotes() {
+	let url = getApiLink();
 	let key = getKeyFromURL();
 	let note = localStorage.getItem('notes');
 
-	/* prod https://notesly.onrender.com/api/updateNotes */
-	/* dev http://localhost:5000/api/updateNotes */
-
 	if (key) {
-		fetch('https://notesly.onrender.com/api/updateNotes', {
+		fetch(`${url}/api/updateNotes`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

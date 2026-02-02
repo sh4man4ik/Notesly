@@ -3,6 +3,7 @@ import SuccessAlert from '../../shared/ui/SuccessAlert/SuccessAlert.tsx';
 import Title from '../../shared/ui/Title/Title.tsx';
 import getText from '../../shared/texts/texts.ts';
 import updateOldKey from './api/updateOldKey.ts';
+import getApiLink from '../../shared/helpers/getApiLink.ts';
 
 function AccessKey() {
 	let [key, setKey] = useState(() => {
@@ -10,10 +11,7 @@ function AccessKey() {
 	});
 	let [showAlert, setShowAlert] = useState(false);
 
-	/* prod https://notesly-sync.netlify.app/?key= */
-	/* dev http://localhost:443/?key= */
-
-	let url = 'https://notesly-sync.netlify.app/?key=';
+	let url = `${getApiLink()}/?key=`;
 
 	let generateKey = () => {
 		let newKey = crypto.randomUUID();
