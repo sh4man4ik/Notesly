@@ -4,6 +4,7 @@ import InfoAlert from '../../shared/ui/InfoAlert/InfoAlert.tsx';
 import Title from '../../shared/ui/Title/Title.tsx';
 import getText from '../../shared/texts/texts.ts';
 import updateOldKey from './api/updateOldKey.ts';
+import getHostingLink from '../../shared/helpers/getHostingLink.ts';
 
 function AccessKey() {
 	let [key, setKey] = useState(() => {
@@ -13,7 +14,7 @@ function AccessKey() {
 	let [showInfoAlert, setShowInfoAlert] = useState(false);
 
 	/* hosting link */
-	let url = 'https://notesly-sync.netlify.app/?key=';
+	let url = `${getHostingLink()}/?key=`;
 
 	let generateKey = () => {
 		let newKey = crypto.randomUUID();
