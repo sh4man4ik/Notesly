@@ -5,6 +5,7 @@ import getText from '../../shared/texts/texts';
 import getNotes from './api/getNotes';
 import updateNotes from './api/updateNotes';
 import ReactQuill from 'react-quill-new';
+import Skeleton from './components/Skeleton/Skeleton';
 import 'react-quill-new/dist/quill.bubble.css';
 
 function Notes() {
@@ -58,14 +59,18 @@ function Notes() {
 	return (
 		<>
 			<div className="flex justify-center flex-1">
-				<ReactQuill
-					theme="bubble"
-					modules={modules}
-					value={String(notes)}
-					className="textarea main-content-color outline-none w-[95%] mt-[2.5%] mb-[2.5%]"
-					onChange={handleChange}
-					placeholder={getText('notes.placeholder')}
-				></ReactQuill>
+				{notes ? (
+					<ReactQuill
+						theme="bubble"
+						modules={modules}
+						value={String(notes)}
+						className="textarea main-content-color outline-none w-[95%] mt-[2.5%] mb-[2.5%]"
+						onChange={handleChange}
+						placeholder={getText('notes.placeholder')}
+					></ReactQuill>
+				) : (
+					<Skeleton></Skeleton>
+				)}
 			</div>
 		</>
 	);
