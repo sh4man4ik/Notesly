@@ -1,3 +1,7 @@
+# Notesly
+
+<video src="./video.mp4" controls></video>
+
 # What is it?
 
 Notesly is a website with **rich text notes** that can be easily **synchronized between devices via a link**.
