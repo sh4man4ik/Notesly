@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import SuccessAlert from '../../shared/ui/SuccessAlert/SuccessAlert.tsx';
+import InfoAlert from '../../shared/ui/InfoAlert/InfoAlert.tsx';
 import Title from '../../shared/ui/Title/Title.tsx';
 import getText from '../../shared/texts/texts.ts';
 import updateOldKey from './api/updateOldKey.ts';
@@ -9,7 +10,8 @@ function AccessKey() {
 	let [key, setKey] = useState(() => {
 		return localStorage.getItem('key') || '';
 	});
-	let [showAlert, setShowAlert] = useState(false);
+	let [showSuccessAlert, setShowSuccessAlert] = useState(false);
+	let [showInfoAlert, setShowInfoAlert] = useState(false);
 
 	let url = `${getApiLink()}/?key=`;
 
@@ -21,10 +23,9 @@ function AccessKey() {
 	let copyKey = () => {
 		navigator.clipboard.writeText(url + key);
 
-		setShowAlert(true);
-
+		setShowSuccessAlert(true);
 		setTimeout(() => {
-			setShowAlert(false);
+			setShowSuccessAlert(false);
 		}, 2500);
 	};
 
@@ -36,6 +37,11 @@ function AccessKey() {
 		setKey(newKey);
 
 		updateOldKey(oldKey, newKey);
+
+		setShowInfoAlert(true);
+		setTimeout(() => {
+			setShowInfoAlert(false);
+		}, 2500);
 	};
 
 	return (
@@ -61,7 +67,8 @@ function AccessKey() {
 				</fieldset>
 			</div>
 
-			<SuccessAlert text={getText('alert.success.firstText')} show={showAlert}></SuccessAlert>
+			<SuccessAlert text={getText('alert.success.firstText')} show={showSuccessAlert}></SuccessAlert>
+			<InfoAlert text={getText('alert.info.firstText')} show={showInfoAlert}></InfoAlert>
 		</>
 	);
 }

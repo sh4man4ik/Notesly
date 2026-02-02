@@ -64,14 +64,14 @@ const EN_TEXTS = {
 	accessKey: {
 		title: 'Link settings',
 		firstButton: 'COPY',
-		secondButton: 'REMAKE'
+		secondButton: 'REGENERATE'
 	},
 	alert: {
 		success: {
 			firstText: 'Link copied successfully!'
 		},
 		info: {
-			firstText: ''
+			firstText: 'Link regenerated successfully!'
 		},
 		error: {
 			firstText: ''
