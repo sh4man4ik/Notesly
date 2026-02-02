@@ -1,5 +1,7 @@
 # Notesly
 
+<video src="https://github.com/user-attachments/assets/5bbae9b0-32b5-4be0-b6a5-a6fb9f6b22cc"></video>
+
 # What is it?
 
 Notesly is a website with **rich text notes** that can be easily **synchronized between devices via a link**.
