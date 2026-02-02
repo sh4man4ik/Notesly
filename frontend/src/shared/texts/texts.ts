@@ -17,8 +17,8 @@ const EN_TEXTS = {
 	cards: {
 		title: 'Why choose this website?',
 		firstCard: {
-			title: 'title',
-			text: 'text'
+			title: 'No registration required',
+			text: 'The website stores only your notes and their access key'
 		},
 		secondCard: {
 			title: 'Source code is open',
@@ -26,8 +26,8 @@ const EN_TEXTS = {
 			button: 'OPEN'
 		},
 		thirdCard: {
-			title: 'title',
-			text: 'text'
+			title: 'Simple synchronization',
+			text: 'Just copy the link from the settings to access your notes'
 		},
 		fourthCard: {
 			title: 'Website is free',
@@ -35,24 +35,24 @@ const EN_TEXTS = {
 		}
 	},
 	steps: {
-		title: 'title',
-		firstStep: 'step',
-		secondStep: 'step',
-		thirdStep: 'step'
+		title: 'How to synchronize?',
+		firstStep: 'Write notes',
+		secondStep: 'Copy the link from the settings',
+		thirdStep: 'Access anywhere'
 	},
 	FAQ: {
 		title: 'FAQ',
 		firstQuestion: {
-			title: 'title',
-			text: 'text'
+			title: 'What happens if I delete the website data?',
+			text: 'Deleting the website data creates a new key and new notes. Your old notes will still be accessible, but only via their link.'
 		},
 		secondQuestion: {
-			title: 'title',
-			text: 'text'
+			title: 'What happens if I regenerate the key?',
+			text: 'If you regenerate the key, anyone with the old link will no longer be able to see your notes. Only you will still have access.'
 		},
 		thirdQuestion: {
-			title: 'title',
-			text: 'text'
+			title: 'How many notes can I create?',
+			text: 'Only one page of notes is visible at a time, but your old notes remain accessible via their link. So, there’s effectively no limit to the number of notes you can create.'
 		}
 	},
 	footer: {
