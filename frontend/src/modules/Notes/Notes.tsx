@@ -43,9 +43,12 @@ function Notes() {
 				'bold',
 				'italic',
 				'underline',
+				'strike',
 				{ align: [] },
 				{ list: 'ordered' },
 				{ list: 'bullet' },
+				{ color: [] },
+				{ background: [] },
 				'clean'
 			]
 		]
