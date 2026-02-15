@@ -8,7 +8,7 @@ Notesly is a website with **rich text notes** that can be easily **synchronized 
 
 # Quick Start
 
-The website can be accessed at https://notesly-sync.netlify.app
+The website can be accessed at https://notesly-sync.pages.dev
 
 # Source Code
 
