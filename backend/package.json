@@ -8,13 +8,11 @@
 	"devDependencies": {
 		"@types/cors": "^2.8.19",
 		"@types/express": "^5.0.6",
-		"@types/jest": "^30.0.0",
 		"@typescript-eslint/eslint-plugin": "^8.52.0",
 		"@typescript-eslint/parser": "^8.52.0",
 		"eslint": "^9.39.2",
-		"jest": "^30.2.0",
 		"prettier": "^3.7.4",
-		"ts-jest": "^29.4.6"
+		"vitest": "^4.0.18"
 	},
 	"name": "backend",
 	"version": "1.0.0",
@@ -22,7 +20,7 @@
 	"main": "eslint.config.js",
 	"scripts": {
 		"server": "node ./src/server.ts",
-		"test": "jest",
+		"test": "vitest",
 		"lint": "eslint .",
 		"ts": "tsc --noEmit"
 	},

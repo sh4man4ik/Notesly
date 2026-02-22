@@ -52,4 +52,4 @@ npm run server
 
 # Tech stack
 
-The following technologies are used to develop the website: **TypeScript**, **React**, **Tailwind CSS**, **daisyUI**, **Remix Icon**, **Node.js**, **MongoDB**, **Express**, **Jest**, **react-quill-new**, **Vite**, and **Google Fonts**.
+The following technologies are used to develop the website: **TypeScript**, **React**, **Tailwind CSS**, **daisyUI**, **Remix Icon**, **Node.js**, **MongoDB**, **Express**, **Vitest**, **react-quill-new**, **Vite**, and **Google Fonts**.

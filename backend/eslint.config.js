@@ -16,7 +16,6 @@ export default [
 				project: './tsconfig.json'
 			},
 			globals: {
-				...globals.jest,
 				...globals.browser,
 				...globals.node,
 				ObjectId: 'readonly',

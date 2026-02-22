@@ -17,8 +17,7 @@ export default defineConfig([
 			parser,
 			ecmaVersion: 'latest',
 			globals: {
-				...globals.browser,
-				...globals.jest
+				...globals.browser
 			},
 
 			parserOptions: {
