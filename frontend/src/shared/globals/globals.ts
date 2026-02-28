@@ -13,7 +13,7 @@ function initGlobals() {
 
 	/* notes */
 	if (!localStorage.getItem('notes')) {
-		localStorage.setItem('notes', '');
+		localStorage.setItem('notes', '<p></p>');
 	}
 
 	/* key */
