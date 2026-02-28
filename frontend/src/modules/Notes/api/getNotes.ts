@@ -20,6 +20,7 @@ async function getNotes() {
 		let data = await response.json();
 		notes = data.note;
 	} catch (error) {
+		notes = '<p></p>';
 		console.log(error);
 	}
 
