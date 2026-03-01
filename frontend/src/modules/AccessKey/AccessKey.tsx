@@ -58,10 +58,10 @@ function AccessKey() {
 						disabled
 					/>
 					<div className="flex gap-2">
-						<button className="btn btn-outline btn-success flex-1 small-font" onClick={copyKey}>
+						<button className="btn btn-outline flex-1 small-font" onClick={copyKey}>
 							{getText('accessKey.firstButton')}
 						</button>
-						<button className="btn btn-outline btn-info flex-1 small-font" onClick={remakeKey}>
+						<button className="btn btn-outline flex-1 small-font" onClick={remakeKey}>
 							{getText('accessKey.secondButton')}
 						</button>
 					</div>
