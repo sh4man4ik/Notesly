@@ -1,6 +1,6 @@
 # Notesly
 
-<video src="https://github.com/user-attachments/assets/5bbae9b0-32b5-4be0-b6a5-a6fb9f6b22cc"></video>
+<video src="https://github.com/user-attachments/assets/e70e94cb-4fc0-4803-9d11-b110e05fd302"></video>
 
 # What is it?
 
