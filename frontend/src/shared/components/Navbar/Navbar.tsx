@@ -19,7 +19,7 @@ function Navbar() {
 
 	return (
 		<>
-			<div className="drawer">
+			<div className="drawer border-b border-base-200">
 				<input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 				<div className="drawer-content flex flex-col">
 					{/* Navbar */}

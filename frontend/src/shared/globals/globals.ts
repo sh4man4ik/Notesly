@@ -1,8 +1,8 @@
 function initGlobals() {
 	/* theme */
 	if (!localStorage.getItem('theme')) {
-		let darkTheme = 'dim';
-		let lightTheme = 'winter';
+		let darkTheme = 'black';
+		let lightTheme = 'corporate';
 
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 			localStorage.setItem('theme', darkTheme);

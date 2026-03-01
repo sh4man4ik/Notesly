@@ -53,15 +53,15 @@ function AccessKey() {
 					<legend className="fieldset-legend small-font">{getText('keyFieldset.title')}</legend>
 					<input
 						type="text"
-						className="input small-font bg-base-300 text-base-content"
+						className="input small-font bg-base-200 text-base-content"
 						value={url + key}
 						disabled
 					/>
 					<div className="flex gap-2">
-						<button className="btn btn-accent flex-1 small-font" onClick={copyKey}>
+						<button className="btn btn-outline btn-success flex-1 small-font" onClick={copyKey}>
 							{getText('accessKey.firstButton')}
 						</button>
-						<button className="btn btn-error flex-1 small-font" onClick={remakeKey}>
+						<button className="btn btn-outline btn-info flex-1 small-font" onClick={remakeKey}>
 							{getText('accessKey.secondButton')}
 						</button>
 					</div>

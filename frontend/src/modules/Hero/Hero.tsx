@@ -16,7 +16,7 @@ function Hero() {
 						</span>
 						<p className="py-6 medium-font">{getText('hero.subtitle')}</p>
 						<Link to="/">
-							<button className="btn btn-accent small-font">{getText('hero.button')}</button>
+							<button className="btn btn-outline small-font">{getText('hero.button')}</button>
 						</Link>
 					</div>
 				</div>

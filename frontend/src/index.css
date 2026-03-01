@@ -2,8 +2,8 @@
 
 @plugin "daisyui" {
 	themes:
-		winter --default,
-		dim --prefersdark;
+		corporate --default,
+		black --prefersdark;
 }
 
 /* font for all elements*/
@@ -16,7 +16,7 @@
 /* main color of content */
 
 .main-content-color {
-	@apply bg-base-300 text-base-content;
+	@apply bg-base-100 text-base-content;
 }
 
 /* alert style */

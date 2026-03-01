@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
 function ThemeController() {
-	let darkTheme = 'dim';
-	let lightTheme = 'winter';
+	let darkTheme = 'black';
+	let lightTheme = 'corporate';
 
 	let [theme, setTheme] = useState(() => {
 		return localStorage.getItem('theme') || '';
