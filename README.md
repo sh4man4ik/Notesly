@@ -55,3 +55,8 @@ npm run server
 # Tech stack
 
 The following technologies are used to develop the website: **TypeScript**, **React**, **Tailwind CSS**, **daisyUI**, **Remix Icon**, **Node.js**, **MongoDB**, **Express**, **Vitest**, **react-quill-new**, **Vite**, and **Google Fonts**.
+
+# Facts about the website
+
+- Google Analytics is used to view stats
+- The website is responsive
