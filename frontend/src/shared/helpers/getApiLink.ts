@@ -1,6 +1,6 @@
 /* API link */
 function getApiLink() {
-	let prod = 'https://notesly.onrender.com';
+	let prod = import.meta.env.VITE_API_URL;
 	let dev = 'http://localhost:5000';
 
 	return prod;
