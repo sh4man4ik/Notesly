@@ -12,8 +12,6 @@ The website can be accessed at https://notesly-sync.vercel.app
 
 # Source Code
 
-Don't forget to change prod to dev in the _getApiLink.ts_ file (frontend/src/shared/helpers) and in the _getHostingLink.ts_ file (frontend/src/shared/helpers).
-
 1. Clone the repository:
 
 ```
